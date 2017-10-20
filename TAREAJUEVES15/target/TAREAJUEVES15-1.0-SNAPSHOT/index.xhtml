@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition     xmlns="http://www.w3.org/1999/xhtml"
+                    xmlns:h="http://java.sun.com/jsf/html"
+                    xmlns:ui="http://java.sun.com/jsf/facelets"
+                    template="/template/common.xhtml"
+                    xmlns:f="http://xmlns.jcp.org/jsf/core">
+        <ui:define name="header">
+        </ui:define>
+        <ui:define name="content">
+            <p>FORMULARIO</p>
+            <h:form >
+                <p>NOMBRE:<h:inputText value="#{userBeans.helper.userName}" /></p>
+                <p>APELLIDO MATERNO:<h:inputText value="#{userBeans.helper.userApmat}" /></p>
+                <p>APELLIDO PATERNO:<h:inputText value="#{userBeans.helper.userAppat}" /></p>
+                <p>EDAD:<h:inputText value="#{userBeans.helper.userEdad}" /></p>
+                <p>SEXO:<h:inputText value="#{userBeans.helper.userSexo}" /></p>
+                <br></br>
+                <h:commandButton value="Alta" action="#{userBeans.ALTAS()}" />
+                
+            </h:form>
+        </ui:define>
+        <ui:define name="footer">
+        </ui:define>
+</ui:composition>
+ <!--script language="JavaScript" type="text/javascript"> 
+            function clean(){
+                /*var x = document.getElementById("erase");
+                x.querySelector(".status").innerHTML = "";
+         <h:commandButton value="Clean" onclick="clean()"  />*/
+               /* var frm = document.getElementsByName('formdata')[0];
+                frm.reset();  // Reset*/
+            }
+        </script-->
